@@ -1,0 +1,52 @@
+\doxysection{Scene\+Tree Struct Reference}
+\hypertarget{structSceneTree}{}\label{structSceneTree}\index{SceneTree@{SceneTree}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structSceneTree_ae8611a359373feabe0e02606d5604409}\label{structSceneTree_ae8611a359373feabe0e02606d5604409} 
+{\bfseries this} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}r, int objects)
+\item 
+\Hypertarget{structSceneTree_ae21ef3c883e8a5665e360cde1fa260e3}\label{structSceneTree_ae21ef3c883e8a5665e360cde1fa260e3} 
+void {\bfseries load\+From\+JSON} (JSONValue j)
+\item 
+\Hypertarget{structSceneTree_a31ac99522278d46f223b3bc63c350ceb}\label{structSceneTree_a31ac99522278d46f223b3bc63c350ceb} 
+JSONValue {\bfseries to\+JSON} ()
+\item 
+\Hypertarget{structSceneTree_ac3e809c30c60fca74527952e51f851a2}\label{structSceneTree_ac3e809c30c60fca74527952e51f851a2} 
+void {\bfseries Load\+World\+Menu\+Screen} ()
+\item 
+\Hypertarget{structSceneTree_afa04d68dcb24c0d4d58e0f6b469f709c}\label{structSceneTree_afa04d68dcb24c0d4d58e0f6b469f709c} 
+void {\bfseries Load\+World} (int objects)
+\item 
+\Hypertarget{structSceneTree_ac2a363626b6876cfcc50b19d037923de}\label{structSceneTree_ac2a363626b6876cfcc50b19d037923de} 
+void {\bfseries Input} (\mbox{\hyperlink{classCamera}{Camera}} cam)
+\item 
+\Hypertarget{structSceneTree_a1f23fada527895eeafa82ba31ec4a41a}\label{structSceneTree_a1f23fada527895eeafa82ba31ec4a41a} 
+void {\bfseries Update} (\mbox{\hyperlink{classCamera}{Camera}} cam)
+\item 
+\Hypertarget{structSceneTree_ab22804ea5ce8b891548aaa6971280c93}\label{structSceneTree_ab22804ea5ce8b891548aaa6971280c93} 
+void {\bfseries Render} ()
+\item 
+\Hypertarget{structSceneTree_a7d0f1b2004890ed3869c426efcaeaadd}\label{structSceneTree_a7d0f1b2004890ed3869c426efcaeaadd} 
+void {\bfseries Add\+Object} (string\mbox{[}$\,$\mbox{]} path, string name, \mbox{\hyperlink{classGameObject}{Game\+Object}} object)
+\item 
+\Hypertarget{structSceneTree_ada8ffcd6fb3135c8b3ba42dd5fb534db}\label{structSceneTree_ada8ffcd6fb3135c8b3ba42dd5fb534db} 
+\mbox{\hyperlink{structTreeNode}{Tree\+Node}} \texorpdfstring{$\ast$}{*} {\bfseries Get\+Node} (string\mbox{[}$\,$\mbox{]} path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structSceneTree_abd9f39e3278da399d1021a90cac859bf}\label{structSceneTree_abd9f39e3278da399d1021a90cac859bf} 
+SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*} {\bfseries m\+Renderer\+Ref}
+\item 
+\Hypertarget{structSceneTree_a3cf0a2c55e43785575a9c1f8a08719d3}\label{structSceneTree_a3cf0a2c55e43785575a9c1f8a08719d3} 
+\mbox{\hyperlink{structTreeNode}{Tree\+Node}} \texorpdfstring{$\ast$}{*} {\bfseries m\+Root}
+\item 
+\Hypertarget{structSceneTree_a882beadeff0123aa126e4044aaeb708e}\label{structSceneTree_a882beadeff0123aa126e4044aaeb708e} 
+\mbox{\hyperlink{classGameObject}{Game\+Object}}\mbox{[}$\,$\mbox{]} {\bfseries m\+Game\+Objects}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+source/\mbox{\hyperlink{gameapplication_8d}{gameapplication.\+d}}\end{DoxyCompactItemize}
