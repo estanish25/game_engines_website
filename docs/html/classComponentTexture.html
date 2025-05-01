@@ -76,13 +76,16 @@ $(function() {
   <div class="headertitle"><div class="title">ComponentTexture Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A texture-rendering component that supports scaling, rotation, and optional text rendering.  
+ <a href="classComponentTexture.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ComponentTexture:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classComponentTexture.png" usemap="#ComponentTexture_map" alt=""/>
   <map id="ComponentTexture_map" name="ComponentTexture_map">
-<area href="interfaceIComponent.html" alt="IComponent" shape="rect" coords="0,0,117,24"/>
+<area href="interfaceIComponent.html" title="Interface for all components in the engine." alt="IComponent" shape="rect" coords="0,0,117,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -93,28 +96,38 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aea75d8ee57edba984230943d4759248d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc44e85b63bc40976f4fc88105838597" id="r_adc44e85b63bc40976f4fc88105838597"><td class="memItemLeft" align="right" valign="top"><a id="adc44e85b63bc40976f4fc88105838597" name="adc44e85b63bc40976f4fc88105838597"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetTexture</b> (string filename, SDL_Rect srcRect=SDL_Rect(0, 0, 0, 0))</td></tr>
+<tr class="memdesc:adc44e85b63bc40976f4fc88105838597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the texture from a file and optional source rectangle. <br /></td></tr>
 <tr class="separator:adc44e85b63bc40976f4fc88105838597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36d4c517c09c1431f386562111059d35" id="r_a36d4c517c09c1431f386562111059d35"><td class="memItemLeft" align="right" valign="top"><a id="a36d4c517c09c1431f386562111059d35" name="a36d4c517c09c1431f386562111059d35"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDest</b> (Vec2f pos, Vec2f scale, double angle)</td></tr>
+<tr class="memdesc:a36d4c517c09c1431f386562111059d35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the destination position, scale, and angle. <br /></td></tr>
 <tr class="separator:a36d4c517c09c1431f386562111059d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeae7531d4db8580786870e1a47a097b1" id="r_aeae7531d4db8580786870e1a47a097b1"><td class="memItemLeft" align="right" valign="top"><a id="aeae7531d4db8580786870e1a47a097b1" name="aeae7531d4db8580786870e1a47a097b1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetText</b> (string text, TTF_Font *font, SDL_Color color)</td></tr>
+<tr class="memdesc:aeae7531d4db8580786870e1a47a097b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the texture from rendered text. <br /></td></tr>
 <tr class="separator:aeae7531d4db8580786870e1a47a097b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0047238bdd9289d3a0068acb638e8852" id="r_a0047238bdd9289d3a0068acb638e8852"><td class="memItemLeft" align="right" valign="top"><a id="a0047238bdd9289d3a0068acb638e8852" name="a0047238bdd9289d3a0068acb638e8852"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRotation</b> (double angle)</td></tr>
+<tr class="memdesc:a0047238bdd9289d3a0068acb638e8852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rotation angle in degrees. <br /></td></tr>
 <tr class="separator:a0047238bdd9289d3a0068acb638e8852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeab1f16073b262bf753950068f4a5f5" id="r_abeab1f16073b262bf753950068f4a5f5"><td class="memItemLeft" align="right" valign="top"><a id="abeab1f16073b262bf753950068f4a5f5" name="abeab1f16073b262bf753950068f4a5f5"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>turn</b> (double angle)</td></tr>
+<tr class="memdesc:abeab1f16073b262bf753950068f4a5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rotates the texture by a given angle. <br /></td></tr>
 <tr class="separator:abeab1f16073b262bf753950068f4a5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa6df3eecf04335a887baba734a1214b" id="r_afa6df3eecf04335a887baba734a1214b"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentTexture.html#afa6df3eecf04335a887baba734a1214b">Update</a> ()</td></tr>
+<tr class="memdesc:afa6df3eecf04335a887baba734a1214b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the component every frame.  <br /></td></tr>
 <tr class="separator:afa6df3eecf04335a887baba734a1214b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e00255303b878ef5774e43437633cd4" id="r_a5e00255303b878ef5774e43437633cd4"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentTexture.html#a5e00255303b878ef5774e43437633cd4">Render</a> (SDL_Renderer *r)</td></tr>
+<tr class="memdesc:a5e00255303b878ef5774e43437633cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the component to the screen.  <br /></td></tr>
 <tr class="separator:a5e00255303b878ef5774e43437633cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedd4888047f7a95b65fdc0cc8a4b6d73" id="r_aedd4888047f7a95b65fdc0cc8a4b6d73"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentTexture.html#aedd4888047f7a95b65fdc0cc8a4b6d73">loadFromJSON</a> (JSONValue j)</td></tr>
+<tr class="memdesc:aedd4888047f7a95b65fdc0cc8a4b6d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads component data from a JSON object.  <br /></td></tr>
 <tr class="separator:aedd4888047f7a95b65fdc0cc8a4b6d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae230385b2c0520198c5c2300da4ebde8" id="r_ae230385b2c0520198c5c2300da4ebde8"><td class="memItemLeft" align="right" valign="top">override JSONValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentTexture.html#ae230385b2c0520198c5c2300da4ebde8">toJSON</a> ()</td></tr>
+<tr class="memdesc:ae230385b2c0520198c5c2300da4ebde8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the component to JSON.  <br /></td></tr>
 <tr class="separator:ae230385b2c0520198c5c2300da4ebde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1042276d2117ef48816285ee05d32c9f" id="r_a1042276d2117ef48816285ee05d32c9f"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentTexture.html#a1042276d2117ef48816285ee05d32c9f">GetName</a> ()</td></tr>
+<tr class="memdesc:a1042276d2117ef48816285ee05d32c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name/type of the component.  <br /></td></tr>
 <tr class="separator:a1042276d2117ef48816285ee05d32c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -144,7 +157,9 @@ Vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>destScale</b></td></
 SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>mSrcRect</b></td></tr>
 <tr class="separator:ac52bf01f1c8c2b00eb13b4a0284a08f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A texture-rendering component that supports scaling, rotation, and optional text rendering. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1042276d2117ef48816285ee05d32c9f" name="a1042276d2117ef48816285ee05d32c9f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1042276d2117ef48816285ee05d32c9f">&#9670;&#160;</a></span>GetName()</h2>
 
@@ -168,7 +183,9 @@ SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>mSrcRect</b></td>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Returns the name/type of the component. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#a676e9ba9618ffc6d42afed07ddedf3aa">IComponent</a>.</p>
 
 </div>
 </div>
@@ -196,7 +213,9 @@ SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>mSrcRect</b></td>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Loads component data from a JSON object. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#aed75610139a5e82b1e8b80fda5d54207">IComponent</a>.</p>
 
 </div>
 </div>
@@ -224,7 +243,9 @@ SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>mSrcRect</b></td>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Renders the component to the screen. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#ab5b5737d53e75a42dca835c87552e4d4">IComponent</a>.</p>
 
 </div>
 </div>
@@ -251,7 +272,9 @@ SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>mSrcRect</b></td>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Serializes the component to JSON. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#af0d0ab3f7fe3e570052e2055b6a5c673">IComponent</a>.</p>
 
 </div>
 </div>
@@ -278,7 +301,9 @@ SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><b>mSrcRect</b></td>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Updates the component every frame. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#a2172e40455944e07650d7307aedad28d">IComponent</a>.</p>
 
 </div>
 </div>

@@ -1,5 +1,10 @@
 \doxysection{Component\+Animated\+Texture Class Reference}
 \hypertarget{classComponentAnimatedTexture}{}\label{classComponentAnimatedTexture}\index{ComponentAnimatedTexture@{ComponentAnimatedTexture}}
+
+
+A component for managing sprite animations using a texture atlas and metadata.  
+
+
 Inheritance diagram for Component\+Animated\+Texture\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -19,22 +24,22 @@ struct \mbox{\hyperlink{structComponentAnimatedTexture_1_1Frame}{Frame}}
 \begin{DoxyCompactList}\small\item\em Hold a copy of the texture that is referenced. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentAnimatedTexture_a9025ef13a32764ade8727643839be645}\label{classComponentAnimatedTexture_a9025ef13a32764ade8727643839be645} 
 bool {\bfseries Set\+Texture} (string filename)
-\item 
+\begin{DoxyCompactList}\small\item\em Loads metadata and connects to associated texture/transform components. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{classComponentAnimatedTexture_a2c3db21b6d371547d9107c06b9fc4a78}{Update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the component every frame. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classComponentAnimatedTexture_a117ef6b212f0739925ab45d28183c077}{Load\+Meta\+Data}} (string filename)
 \item 
 \Hypertarget{classComponentAnimatedTexture_a8f73c996d8dd7b4f3dc5a68b473779af}\label{classComponentAnimatedTexture_a8f73c996d8dd7b4f3dc5a68b473779af} 
 void {\bfseries Change\+Animation\+Sequence} (string name)
-\item 
+\begin{DoxyCompactList}\small\item\em Switches to a new animation sequence by name. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{classComponentAnimatedTexture_a9e83f801f8237af515207c78b4c17886}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}r)
 \item 
 override void \mbox{\hyperlink{classComponentAnimatedTexture_a6bff1c3f99f029eed4cebb1114b95959}{load\+From\+JSON}} (JSONValue j)
-\item 
+\begin{DoxyCompactList}\small\item\em Loads component data from a JSON object. \end{DoxyCompactList}\item 
 override JSONValue \mbox{\hyperlink{classComponentAnimatedTexture_af9e78c1825c3281ce364bba79bb08cb2}{to\+JSON}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Serializes the component to JSON. \end{DoxyCompactList}\item 
 override string \mbox{\hyperlink{classComponentAnimatedTexture_a5ff9c89ef4f73325398d49097bf184df}{Get\+Name}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the name/type of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -67,6 +72,9 @@ long {\bfseries m\+Last\+Frame\+In\+Sequence}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+A component for managing sprite animations using a texture atlas and metadata. 
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{classComponentAnimatedTexture_a5ff9c89ef4f73325398d49097bf184df}\label{classComponentAnimatedTexture_a5ff9c89ef4f73325398d49097bf184df} 
 \index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!GetName@{GetName}}
@@ -76,7 +84,11 @@ long {\bfseries m\+Last\+Frame\+In\+Sequence}
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Returns the name/type of the component. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_a676e9ba9618ffc6d42afed07ddedf3aa}{IComponent}}.
 
 \Hypertarget{classComponentAnimatedTexture_a6bff1c3f99f029eed4cebb1114b95959}\label{classComponentAnimatedTexture_a6bff1c3f99f029eed4cebb1114b95959} 
 \index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!loadFromJSON@{loadFromJSON}}
@@ -86,7 +98,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Loads component data from a JSON object. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_aed75610139a5e82b1e8b80fda5d54207}{IComponent}}.
 
 \Hypertarget{classComponentAnimatedTexture_a117ef6b212f0739925ab45d28183c077}\label{classComponentAnimatedTexture_a117ef6b212f0739925ab45d28183c077} 
 \index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!LoadMetaData@{LoadMetaData}}
@@ -102,7 +118,7 @@ Load a data file that describes meta-\/data about animations stored in a single 
 
 Play an animation based on the name of the animation sequence specified in the data file. 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Implements \mbox{\hyperlink{interfaceIComponent_ab5b5737d53e75a42dca835c87552e4d4}{IComponent}}.
 
 \Hypertarget{classComponentAnimatedTexture_af9e78c1825c3281ce364bba79bb08cb2}\label{classComponentAnimatedTexture_af9e78c1825c3281ce364bba79bb08cb2} 
 \index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!toJSON@{toJSON}}
@@ -112,7 +128,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Serializes the component to JSON. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_af0d0ab3f7fe3e570052e2055b6a5c673}{IComponent}}.
 
 \Hypertarget{classComponentAnimatedTexture_a2c3db21b6d371547d9107c06b9fc4a78}\label{classComponentAnimatedTexture_a2c3db21b6d371547d9107c06b9fc4a78} 
 \index{ComponentAnimatedTexture@{ComponentAnimatedTexture}!Update@{Update}}
@@ -122,7 +142,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Updates the component every frame. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_a2172e40455944e07650d7307aedad28d}{IComponent}}.
 
 
 

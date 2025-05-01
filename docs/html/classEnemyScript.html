@@ -88,12 +88,12 @@ Inheritance diagram for EnemyScript:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6bd5f1465921cfc8edb1d232553e298d" id="r_a6bd5f1465921cfc8edb1d232553e298d"><td class="memItemLeft" align="right" valign="top"><a id="a6bd5f1465921cfc8edb1d232553e298d" name="a6bd5f1465921cfc8edb1d232553e298d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>this</b> (size_t owner)</td></tr>
+<tr class="memitem:a6bd5f1465921cfc8edb1d232553e298d" id="r_a6bd5f1465921cfc8edb1d232553e298d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnemyScript.html#a6bd5f1465921cfc8edb1d232553e298d">this</a> (size_t owner)</td></tr>
 <tr class="separator:a6bd5f1465921cfc8edb1d232553e298d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdfc42b5a139f2994b1b12aa40b9913c" id="r_abdfc42b5a139f2994b1b12aa40b9913c"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnemyScript.html#abdfc42b5a139f2994b1b12aa40b9913c">Update</a> ()</td></tr>
 <tr class="separator:abdfc42b5a139f2994b1b12aa40b9913c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27bdfea85b15810527d2e768251ac546" id="r_a27bdfea85b15810527d2e768251ac546"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEnemyScript.html#a27bdfea85b15810527d2e768251ac546">GetName</a> ()</td></tr>
+<tr class="memdesc:a27bdfea85b15810527d2e768251ac546"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this script.  <br /></td></tr>
 <tr class="separator:a27bdfea85b15810527d2e768251ac546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -102,6 +102,36 @@ Public Attributes</h2></td></tr>
 Vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>mVel</b></td></tr>
 <tr class="separator:a88b23df21d3f74c920a92c376e50a96a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Script that controls basic vertical movement for an enemy <a class="el" href="classGameObject.html">GameObject</a>. Enemy bounces between the top and bottom bounds of the map. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a6bd5f1465921cfc8edb1d232553e298d" name="a6bd5f1465921cfc8edb1d232553e298d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bd5f1465921cfc8edb1d232553e298d">&#9670;&#160;</a></span>this()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">EnemyScript::this </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>owner</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs an <a class="el" href="classEnemyScript.html">EnemyScript</a> tied to a <a class="el" href="classGameObject.html">GameObject</a> by ID. Initializes velocity to move downward. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a27bdfea85b15810527d2e768251ac546" name="a27bdfea85b15810527d2e768251ac546"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27bdfea85b15810527d2e768251ac546">&#9670;&#160;</a></span>GetName()</h2>
@@ -125,6 +155,8 @@ Vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>mVel</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns the name of this script. </p>
 
 <p>Implements <a class="el" href="interfaceIScript.html">IScript</a>.</p>
 
@@ -152,6 +184,7 @@ Vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>mVel</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Updates the enemy's vertical movement each frame. Reverses direction upon hitting the top or bottom bounds. </p>
 
 <p>Implements <a class="el" href="interfaceIScript.html">IScript</a>.</p>
 

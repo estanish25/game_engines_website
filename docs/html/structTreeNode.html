@@ -81,9 +81,9 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:accae186967d3180a5537216744923024" id="r_accae186967d3180a5537216744923024"><td class="memItemLeft" align="right" valign="top"><a id="accae186967d3180a5537216744923024" name="accae186967d3180a5537216744923024"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>this</b> (<a class="el" href="classGameObject.html">GameObject</a> *obj)</td></tr>
+<tr class="memdesc:accae186967d3180a5537216744923024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structTreeNode.html">TreeNode</a> with an associated <a class="el" href="classGameObject.html">GameObject</a>. <br /></td></tr>
 <tr class="separator:accae186967d3180a5537216744923024"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a856b1879be9d62abd8e89189ca214079" id="r_a856b1879be9d62abd8e89189ca214079"><td class="memItemLeft" align="right" valign="top"><a id="a856b1879be9d62abd8e89189ca214079" name="a856b1879be9d62abd8e89189ca214079"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>DFS</b> (void delegate(<a class="el" href="classGameObject.html">GameObject</a> *) objectFunc, bool topDown=true)</td></tr>
+<tr class="memitem:a856b1879be9d62abd8e89189ca214079" id="r_a856b1879be9d62abd8e89189ca214079"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structTreeNode.html#a856b1879be9d62abd8e89189ca214079">DFS</a> (void delegate(<a class="el" href="classGameObject.html">GameObject</a> *) objectFunc, bool topDown=true)</td></tr>
 <tr class="separator:a856b1879be9d62abd8e89189ca214079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -95,6 +95,46 @@ Public Attributes</h2></td></tr>
 <a class="el" href="classGameObject.html">GameObject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>object</b></td></tr>
 <tr class="separator:a5079f055e5f1c563051a44703bb6b479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Represents a node in the scene tree. Each node optionally holds a <a class="el" href="classGameObject.html">GameObject</a> and can have named child nodes. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a856b1879be9d62abd8e89189ca214079" name="a856b1879be9d62abd8e89189ca214079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a856b1879be9d62abd8e89189ca214079">&#9670;&#160;</a></span>DFS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TreeNode::DFS </td>
+          <td>(</td>
+          <td class="paramtype">void delegate(<a class="el" href="classGameObject.html">GameObject</a> *)&#160;</td>
+          <td class="paramname"><em>objectFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>topDown</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Performs a depth-first search traversal on the scene tree. Params: objectFunc = delegate to apply to each <a class="el" href="classGameObject.html">GameObject</a> topDown = whether to apply function pre-order (true) or post-order (false) </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>source/<a class="el" href="gameapplication_8d.html">gameapplication.d</a></li>
 </ul>

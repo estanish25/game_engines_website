@@ -76,26 +76,35 @@ $(function() {
   <div class="headertitle"><div class="title">Scene Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="structScene.html" title="Scene encapsulates the camera, tree, and game state for a level or UI screen.">Scene</a> encapsulates the camera, tree, and game state for a level or UI screen.  
+ <a href="structScene.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a82a1c5606c9be8b672adf099a1fe64d6" id="r_a82a1c5606c9be8b672adf099a1fe64d6"><td class="memItemLeft" align="right" valign="top"><a id="a82a1c5606c9be8b672adf099a1fe64d6" name="a82a1c5606c9be8b672adf099a1fe64d6"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>this</b> (SDL_Renderer *r, string jsonDataFile, <a class="el" href="classCamera.html">Camera</a> cam)</td></tr>
+<tr class="memdesc:a82a1c5606c9be8b672adf099a1fe64d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create scene with a new camera. <br /></td></tr>
 <tr class="separator:a82a1c5606c9be8b672adf099a1fe64d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3663babd72a75e40dbfa6757ffae18f" id="r_ac3663babd72a75e40dbfa6757ffae18f"><td class="memItemLeft" align="right" valign="top"><a id="ac3663babd72a75e40dbfa6757ffae18f" name="ac3663babd72a75e40dbfa6757ffae18f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Input</b> ()</td></tr>
+<tr class="memdesc:ac3663babd72a75e40dbfa6757ffae18f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forwards input handling to the scene tree. <br /></td></tr>
 <tr class="separator:ac3663babd72a75e40dbfa6757ffae18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a71b4f7752b853ff8032b0941a9d8d" id="r_a71a71b4f7752b853ff8032b0941a9d8d"><td class="memItemLeft" align="right" valign="top"><a id="a71a71b4f7752b853ff8032b0941a9d8d" name="a71a71b4f7752b853ff8032b0941a9d8d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
+<tr class="memdesc:a71a71b4f7752b853ff8032b0941a9d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates scripts and the scene tree. <br /></td></tr>
 <tr class="separator:a71a71b4f7752b853ff8032b0941a9d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91913b921d41d374e00eac347358dc14" id="r_a91913b921d41d374e00eac347358dc14"><td class="memItemLeft" align="right" valign="top"><a id="a91913b921d41d374e00eac347358dc14" name="a91913b921d41d374e00eac347358dc14"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Render</b> ()</td></tr>
+<tr class="memdesc:a91913b921d41d374e00eac347358dc14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the scene tree. <br /></td></tr>
 <tr class="separator:a91913b921d41d374e00eac347358dc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a431b1373b5c9a336a0db68d8854ab1d6" id="r_a431b1373b5c9a336a0db68d8854ab1d6"><td class="memItemLeft" align="right" valign="top"><a id="a431b1373b5c9a336a0db68d8854ab1d6" name="a431b1373b5c9a336a0db68d8854ab1d6"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loadFromJSON</b> (JSONValue j)</td></tr>
+<tr class="memdesc:a431b1373b5c9a336a0db68d8854ab1d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the scene state from a JSON object. <br /></td></tr>
 <tr class="separator:a431b1373b5c9a336a0db68d8854ab1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b324216964e4c024924769ee848004a" id="r_a8b324216964e4c024924769ee848004a"><td class="memItemLeft" align="right" valign="top"><a id="a8b324216964e4c024924769ee848004a" name="a8b324216964e4c024924769ee848004a"></a>
 JSONValue&#160;</td><td class="memItemRight" valign="bottom"><b>toJSON</b> ()</td></tr>
+<tr class="memdesc:a8b324216964e4c024924769ee848004a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the scene into a JSON object. <br /></td></tr>
 <tr class="separator:a8b324216964e4c024924769ee848004a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -116,7 +125,9 @@ SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><b>mRendererRe
 <a class="el" href="interfaceIScript.html">IScript</a>[]&#160;</td><td class="memItemRight" valign="bottom"><b>mSceneScripts</b></td></tr>
 <tr class="separator:abde85126d766c956d5d7b5a7720cd763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="structScene.html" title="Scene encapsulates the camera, tree, and game state for a level or UI screen.">Scene</a> encapsulates the camera, tree, and game state for a level or UI screen. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>source/<a class="el" href="gameapplication_8d.html">gameapplication.d</a></li>
 </ul>
 </div><!-- contents -->

@@ -76,13 +76,16 @@ $(function() {
   <div class="headertitle"><div class="title">ComponentCollision Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A component that manages axis-aligned bounding boxes and collision detection.  
+ <a href="classComponentCollision.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ComponentCollision:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classComponentCollision.png" usemap="#ComponentCollision_map" alt=""/>
   <map id="ComponentCollision_map" name="ComponentCollision_map">
-<area href="interfaceIComponent.html" alt="IComponent" shape="rect" coords="0,0,123,24"/>
+<area href="interfaceIComponent.html" title="Interface for all components in the engine." alt="IComponent" shape="rect" coords="0,0,123,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -92,26 +95,35 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>this</b> (size_t owner)</td></tr>
 <tr class="separator:adedd34b623e18196d2cf87ec60f64500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eb05f65f7c2c66f216e2000e657b85f" id="r_a8eb05f65f7c2c66f216e2000e657b85f"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentCollision.html#a8eb05f65f7c2c66f216e2000e657b85f">Update</a> ()</td></tr>
+<tr class="memdesc:a8eb05f65f7c2c66f216e2000e657b85f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the component every frame.  <br /></td></tr>
 <tr class="separator:a8eb05f65f7c2c66f216e2000e657b85f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92fe8814948a110f963a53f65aba9098" id="r_a92fe8814948a110f963a53f65aba9098"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentCollision.html#a92fe8814948a110f963a53f65aba9098">Render</a> (SDL_Renderer *r)</td></tr>
+<tr class="memdesc:a92fe8814948a110f963a53f65aba9098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the component to the screen.  <br /></td></tr>
 <tr class="separator:a92fe8814948a110f963a53f65aba9098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a102cf71a454428b1a31a943c572bfaac" id="r_a102cf71a454428b1a31a943c572bfaac"><td class="memItemLeft" align="right" valign="top"><a id="a102cf71a454428b1a31a943c572bfaac" name="a102cf71a454428b1a31a943c572bfaac"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRect</b> (int x, int y, int w, int h)</td></tr>
+<tr class="memdesc:a102cf71a454428b1a31a943c572bfaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the rectangle directly. <br /></td></tr>
 <tr class="separator:a102cf71a454428b1a31a943c572bfaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa18538a09a79fd6abaf7a0e4d3b5cca" id="r_afa18538a09a79fd6abaf7a0e4d3b5cca"><td class="memItemLeft" align="right" valign="top"><a id="afa18538a09a79fd6abaf7a0e4d3b5cca" name="afa18538a09a79fd6abaf7a0e4d3b5cca"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPosition</b> (int x, int y)</td></tr>
+<tr class="memdesc:afa18538a09a79fd6abaf7a0e4d3b5cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the world position of the collision box. <br /></td></tr>
 <tr class="separator:afa18538a09a79fd6abaf7a0e4d3b5cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a252e84801e990879ccda553413a8e571" id="r_a252e84801e990879ccda553413a8e571"><td class="memItemLeft" align="right" valign="top"><a id="a252e84801e990879ccda553413a8e571" name="a252e84801e990879ccda553413a8e571"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetOffset</b> (int x, int y)</td></tr>
+<tr class="memdesc:a252e84801e990879ccda553413a8e571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the offset from the <a class="el" href="classGameObject.html">GameObject</a> position. <br /></td></tr>
 <tr class="separator:a252e84801e990879ccda553413a8e571"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe8cdbe62f6e5c2667b607f2bcd7cc8e" id="r_abe8cdbe62f6e5c2667b607f2bcd7cc8e"><td class="memItemLeft" align="right" valign="top"><a id="abe8cdbe62f6e5c2667b607f2bcd7cc8e" name="abe8cdbe62f6e5c2667b607f2bcd7cc8e"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>isColliding</b> (SDL_Rect object)</td></tr>
+<tr class="memdesc:abe8cdbe62f6e5c2667b607f2bcd7cc8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this component is colliding with another SDL_Rect. <br /></td></tr>
 <tr class="separator:abe8cdbe62f6e5c2667b607f2bcd7cc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4c0d01ce0123d08ce8937817aba0f1b" id="r_ae4c0d01ce0123d08ce8937817aba0f1b"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentCollision.html#ae4c0d01ce0123d08ce8937817aba0f1b">loadFromJSON</a> (JSONValue j)</td></tr>
+<tr class="memdesc:ae4c0d01ce0123d08ce8937817aba0f1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads component data from a JSON object.  <br /></td></tr>
 <tr class="separator:ae4c0d01ce0123d08ce8937817aba0f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf1dcc53c86c3d3d080dfdffcc551447" id="r_abf1dcc53c86c3d3d080dfdffcc551447"><td class="memItemLeft" align="right" valign="top">override JSONValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentCollision.html#abf1dcc53c86c3d3d080dfdffcc551447">toJSON</a> ()</td></tr>
+<tr class="memdesc:abf1dcc53c86c3d3d080dfdffcc551447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the component to JSON.  <br /></td></tr>
 <tr class="separator:abf1dcc53c86c3d3d080dfdffcc551447"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c0f681843ee7da32ae1d550dd835986" id="r_a6c0f681843ee7da32ae1d550dd835986"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentCollision.html#a6c0f681843ee7da32ae1d550dd835986">GetName</a> ()</td></tr>
+<tr class="memdesc:a6c0f681843ee7da32ae1d550dd835986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name/type of the component.  <br /></td></tr>
 <tr class="separator:a6c0f681843ee7da32ae1d550dd835986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -126,7 +138,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>offset_x</b></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>offset_y</b></td></tr>
 <tr class="separator:a47808db364327c9c002c93548868c8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A component that manages axis-aligned bounding boxes and collision detection. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6c0f681843ee7da32ae1d550dd835986" name="a6c0f681843ee7da32ae1d550dd835986"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c0f681843ee7da32ae1d550dd835986">&#9670;&#160;</a></span>GetName()</h2>
 
@@ -150,7 +164,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>offset_y</b></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Returns the name/type of the component. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#a676e9ba9618ffc6d42afed07ddedf3aa">IComponent</a>.</p>
 
 </div>
 </div>
@@ -178,7 +194,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>offset_y</b></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Loads component data from a JSON object. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#aed75610139a5e82b1e8b80fda5d54207">IComponent</a>.</p>
 
 </div>
 </div>
@@ -206,7 +224,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>offset_y</b></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Renders the component to the screen. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#ab5b5737d53e75a42dca835c87552e4d4">IComponent</a>.</p>
 
 </div>
 </div>
@@ -233,7 +253,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>offset_y</b></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Serializes the component to JSON. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#af0d0ab3f7fe3e570052e2055b6a5c673">IComponent</a>.</p>
 
 </div>
 </div>
@@ -260,7 +282,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>offset_y</b></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Updates the component every frame. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#a2172e40455944e07650d7307aedad28d">IComponent</a>.</p>
 
 </div>
 </div>

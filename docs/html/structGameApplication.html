@@ -76,26 +76,35 @@ $(function() {
   <div class="headertitle"><div class="title">GameApplication Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="structGameApplication.html" title="GameApplication encapsulates the main game loop, scenes, and rendering system.">GameApplication</a> encapsulates the main game loop, scenes, and rendering system.  
+ <a href="structGameApplication.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5d21a0eb3f441577cae61fdb3dcf943f" id="r_a5d21a0eb3f441577cae61fdb3dcf943f"><td class="memItemLeft" align="right" valign="top"><a id="a5d21a0eb3f441577cae61fdb3dcf943f" name="a5d21a0eb3f441577cae61fdb3dcf943f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>this</b> (string title)</td></tr>
+<tr class="memdesc:a5d21a0eb3f441577cae61fdb3dcf943f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structGameApplication.html" title="GameApplication encapsulates the main game loop, scenes, and rendering system.">GameApplication</a>, initializes SDL, audio, and loads the main scene. <br /></td></tr>
 <tr class="separator:a5d21a0eb3f441577cae61fdb3dcf943f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a587f67ea3b8d8dd4950163608c9189bb" id="r_a587f67ea3b8d8dd4950163608c9189bb"><td class="memItemLeft" align="right" valign="top"><a id="a587f67ea3b8d8dd4950163608c9189bb" name="a587f67ea3b8d8dd4950163608c9189bb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Input</b> ()</td></tr>
+<tr class="memdesc:a587f67ea3b8d8dd4950163608c9189bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polls input events and forwards to the active scene. <br /></td></tr>
 <tr class="separator:a587f67ea3b8d8dd4950163608c9189bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8879191af8b4f27f1e4433d36db473d8" id="r_a8879191af8b4f27f1e4433d36db473d8"><td class="memItemLeft" align="right" valign="top"><a id="a8879191af8b4f27f1e4433d36db473d8" name="a8879191af8b4f27f1e4433d36db473d8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Update</b> ()</td></tr>
+<tr class="memdesc:a8879191af8b4f27f1e4433d36db473d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the current scene and handles scene transitions. <br /></td></tr>
 <tr class="separator:a8879191af8b4f27f1e4433d36db473d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaa232c34522e02e667937bcc88fd16a" id="r_abaa232c34522e02e667937bcc88fd16a"><td class="memItemLeft" align="right" valign="top"><a id="abaa232c34522e02e667937bcc88fd16a" name="abaa232c34522e02e667937bcc88fd16a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Render</b> ()</td></tr>
+<tr class="memdesc:abaa232c34522e02e667937bcc88fd16a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the screen and renders the active scene. <br /></td></tr>
 <tr class="separator:abaa232c34522e02e667937bcc88fd16a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a084a32d959f0fffa195c628e9135c251" id="r_a084a32d959f0fffa195c628e9135c251"><td class="memItemLeft" align="right" valign="top"><a id="a084a32d959f0fffa195c628e9135c251" name="a084a32d959f0fffa195c628e9135c251"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>AdvanceFrame</b> ()</td></tr>
+<tr class="memdesc:a084a32d959f0fffa195c628e9135c251"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a single frame of input, update, and render. <br /></td></tr>
 <tr class="separator:a084a32d959f0fffa195c628e9135c251"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a248734231421a03d6a24b647b8c5b9" id="r_a6a248734231421a03d6a24b647b8c5b9"><td class="memItemLeft" align="right" valign="top"><a id="a6a248734231421a03d6a24b647b8c5b9" name="a6a248734231421a03d6a24b647b8c5b9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RunLoop</b> ()</td></tr>
+<tr class="memdesc:a6a248734231421a03d6a24b647b8c5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main game loop with frame capping logic. <br /></td></tr>
 <tr class="separator:a6a248734231421a03d6a24b647b8c5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -113,7 +122,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>mGameRunning</b> =tru
 SDL_Renderer *&#160;</td><td class="memItemRight" valign="bottom"><b>mRenderer</b> = null</td></tr>
 <tr class="separator:a23382968a1d45e0e7e0ed8e732811adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="structGameApplication.html" title="GameApplication encapsulates the main game loop, scenes, and rendering system.">GameApplication</a> encapsulates the main game loop, scenes, and rendering system. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>source/<a class="el" href="gameapplication_8d.html">gameapplication.d</a></li>
 </ul>
 </div><!-- contents -->

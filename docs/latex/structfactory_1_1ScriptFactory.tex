@@ -1,5 +1,10 @@
 \doxysection{factory\+::Script\+Factory Struct Reference}
 \hypertarget{structfactory_1_1ScriptFactory}{}\label{structfactory_1_1ScriptFactory}\index{factory::ScriptFactory@{factory::ScriptFactory}}
+
+
+Singleton factory for creating scripts dynamically.  
+
+
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -19,6 +24,9 @@ static {\bfseries Create\+Script} (string type, size\+\_\+t o\+Owner, \mbox{\hyp
 alias {\bfseries Script\+Factory\+Callback} = \mbox{\hyperlink{interfaceIScript}{IScript}} delegate(size\+\_\+t obj\+Owner, \mbox{\hyperlink{structScene}{Scene}}\texorpdfstring{$\ast$}{*} scene\+Owner)
 \end{DoxyCompactItemize}
 
+
+\doxysubsection{Detailed Description}
+Singleton factory for creating scripts dynamically. 
 
 The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

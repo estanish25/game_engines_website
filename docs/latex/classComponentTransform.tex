@@ -1,5 +1,10 @@
 \doxysection{Component\+Transform Class Reference}
 \hypertarget{classComponentTransform}{}\label{classComponentTransform}\index{ComponentTransform@{ComponentTransform}}
+
+
+A transformation component supporting translation, scaling, and rotation via 3x3 matrices.  
+
+
 Inheritance diagram for Component\+Transform\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -13,33 +18,33 @@ Inheritance diagram for Component\+Transform\+:\begin{figure}[H]
 {\bfseries this} (size\+\_\+t owner)
 \item 
 override void \mbox{\hyperlink{classComponentTransform_ab743dbbeabec8b768a403c2b5ace8884}{Update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the component every frame. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{classComponentTransform_a2f6c2ebb1d69e380bbc95ac05beacbfd}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}r)
-\item 
+\begin{DoxyCompactList}\small\item\em Renders the component to the screen. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{classComponentTransform_adb019b3c321b751ffe4fa92776e453bb}{load\+From\+JSON}} (JSONValue j)
-\item 
+\begin{DoxyCompactList}\small\item\em Loads component data from a JSON object. \end{DoxyCompactList}\item 
 override JSONValue \mbox{\hyperlink{classComponentTransform_a38c12748015e0a604b890afe9114ab8b}{to\+JSON}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Serializes the component to JSON. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentTransform_ab56abc2db0ce867ec456e9cb4c19ac51}\label{classComponentTransform_ab56abc2db0ce867ec456e9cb4c19ac51} 
 void {\bfseries Translate} (float x, float y)
-\item 
+\begin{DoxyCompactList}\small\item\em Applies a translation to the local matrix. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentTransform_ab8d27d48ab2d9edbbd1100f1f4843703}\label{classComponentTransform_ab8d27d48ab2d9edbbd1100f1f4843703} 
 void {\bfseries Scale} (float x, float y)
-\item 
+\begin{DoxyCompactList}\small\item\em Applies scaling to the local matrix. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentTransform_a185cc30a0c00010fcfdf8e81c6910dc1}\label{classComponentTransform_a185cc30a0c00010fcfdf8e81c6910dc1} 
 void {\bfseries Rotate} (float angle)
-\item 
+\begin{DoxyCompactList}\small\item\em Applies a rotation to the local matrix. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentTransform_a6c390346edc889ca8e1490e9c8c02c2b}\label{classComponentTransform_a6c390346edc889ca8e1490e9c8c02c2b} 
 Vec2f {\bfseries Get\+Position} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the object\textquotesingle{}s world position. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentTransform_a6be06c32ed92aec7c81e827954ecaf02}\label{classComponentTransform_a6be06c32ed92aec7c81e827954ecaf02} 
 Vec2f {\bfseries Get\+Scale} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the object\textquotesingle{}s scale. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentTransform_a7fe0b3f3e6497e11d8d085a553abe19e}\label{classComponentTransform_a7fe0b3f3e6497e11d8d085a553abe19e} 
 float {\bfseries Get\+Angle} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns the object\textquotesingle{}s rotation angle. \end{DoxyCompactList}\item 
 override string \mbox{\hyperlink{classComponentTransform_aa3fc4cfc46ba37588166a0dfd2a088c2}{Get\+Name}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the name/type of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -51,6 +56,9 @@ override string \mbox{\hyperlink{classComponentTransform_aa3fc4cfc46ba37588166a0
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+A transformation component supporting translation, scaling, and rotation via 3x3 matrices. 
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{classComponentTransform_aa3fc4cfc46ba37588166a0dfd2a088c2}\label{classComponentTransform_aa3fc4cfc46ba37588166a0dfd2a088c2} 
 \index{ComponentTransform@{ComponentTransform}!GetName@{GetName}}
@@ -60,7 +68,11 @@ override string \mbox{\hyperlink{classComponentTransform_aa3fc4cfc46ba37588166a0
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Returns the name/type of the component. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_a676e9ba9618ffc6d42afed07ddedf3aa}{IComponent}}.
 
 \Hypertarget{classComponentTransform_adb019b3c321b751ffe4fa92776e453bb}\label{classComponentTransform_adb019b3c321b751ffe4fa92776e453bb} 
 \index{ComponentTransform@{ComponentTransform}!loadFromJSON@{loadFromJSON}}
@@ -70,7 +82,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Loads component data from a JSON object. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_aed75610139a5e82b1e8b80fda5d54207}{IComponent}}.
 
 \Hypertarget{classComponentTransform_a2f6c2ebb1d69e380bbc95ac05beacbfd}\label{classComponentTransform_a2f6c2ebb1d69e380bbc95ac05beacbfd} 
 \index{ComponentTransform@{ComponentTransform}!Render@{Render}}
@@ -80,7 +96,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Renders the component to the screen. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_ab5b5737d53e75a42dca835c87552e4d4}{IComponent}}.
 
 \Hypertarget{classComponentTransform_a38c12748015e0a604b890afe9114ab8b}\label{classComponentTransform_a38c12748015e0a604b890afe9114ab8b} 
 \index{ComponentTransform@{ComponentTransform}!toJSON@{toJSON}}
@@ -90,7 +110,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Serializes the component to JSON. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_af0d0ab3f7fe3e570052e2055b6a5c673}{IComponent}}.
 
 \Hypertarget{classComponentTransform_ab743dbbeabec8b768a403c2b5ace8884}\label{classComponentTransform_ab743dbbeabec8b768a403c2b5ace8884} 
 \index{ComponentTransform@{ComponentTransform}!Update@{Update}}
@@ -100,7 +124,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Updates the component every frame. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_a2172e40455944e07650d7307aedad28d}{IComponent}}.
 
 
 

@@ -77,13 +77,16 @@ $(function() {
   <div class="headertitle"><div class="title">ComponentAnimatedTexture Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>A component for managing sprite animations using a texture atlas and metadata.  
+ <a href="classComponentAnimatedTexture.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for ComponentAnimatedTexture:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classComponentAnimatedTexture.png" usemap="#ComponentAnimatedTexture_map" alt=""/>
   <map id="ComponentAnimatedTexture_map" name="ComponentAnimatedTexture_map">
-<area href="interfaceIComponent.html" alt="IComponent" shape="rect" coords="0,0,169,24"/>
+<area href="interfaceIComponent.html" title="Interface for all components in the engine." alt="IComponent" shape="rect" coords="0,0,169,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -101,21 +104,27 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0f33847fcb081001863d0ee60fd938ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9025ef13a32764ade8727643839be645" id="r_a9025ef13a32764ade8727643839be645"><td class="memItemLeft" align="right" valign="top"><a id="a9025ef13a32764ade8727643839be645" name="a9025ef13a32764ade8727643839be645"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetTexture</b> (string filename)</td></tr>
+<tr class="memdesc:a9025ef13a32764ade8727643839be645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads metadata and connects to associated texture/transform components. <br /></td></tr>
 <tr class="separator:a9025ef13a32764ade8727643839be645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c3db21b6d371547d9107c06b9fc4a78" id="r_a2c3db21b6d371547d9107c06b9fc4a78"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentAnimatedTexture.html#a2c3db21b6d371547d9107c06b9fc4a78">Update</a> ()</td></tr>
+<tr class="memdesc:a2c3db21b6d371547d9107c06b9fc4a78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the component every frame.  <br /></td></tr>
 <tr class="separator:a2c3db21b6d371547d9107c06b9fc4a78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a117ef6b212f0739925ab45d28183c077" id="r_a117ef6b212f0739925ab45d28183c077"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentAnimatedTexture.html#a117ef6b212f0739925ab45d28183c077">LoadMetaData</a> (string filename)</td></tr>
 <tr class="separator:a117ef6b212f0739925ab45d28183c077"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f73c996d8dd7b4f3dc5a68b473779af" id="r_a8f73c996d8dd7b4f3dc5a68b473779af"><td class="memItemLeft" align="right" valign="top"><a id="a8f73c996d8dd7b4f3dc5a68b473779af" name="a8f73c996d8dd7b4f3dc5a68b473779af"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>ChangeAnimationSequence</b> (string name)</td></tr>
+<tr class="memdesc:a8f73c996d8dd7b4f3dc5a68b473779af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches to a new animation sequence by name. <br /></td></tr>
 <tr class="separator:a8f73c996d8dd7b4f3dc5a68b473779af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e83f801f8237af515207c78b4c17886" id="r_a9e83f801f8237af515207c78b4c17886"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentAnimatedTexture.html#a9e83f801f8237af515207c78b4c17886">Render</a> (SDL_Renderer *r)</td></tr>
 <tr class="separator:a9e83f801f8237af515207c78b4c17886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bff1c3f99f029eed4cebb1114b95959" id="r_a6bff1c3f99f029eed4cebb1114b95959"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentAnimatedTexture.html#a6bff1c3f99f029eed4cebb1114b95959">loadFromJSON</a> (JSONValue j)</td></tr>
+<tr class="memdesc:a6bff1c3f99f029eed4cebb1114b95959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads component data from a JSON object.  <br /></td></tr>
 <tr class="separator:a6bff1c3f99f029eed4cebb1114b95959"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9e78c1825c3281ce364bba79bb08cb2" id="r_af9e78c1825c3281ce364bba79bb08cb2"><td class="memItemLeft" align="right" valign="top">override JSONValue&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentAnimatedTexture.html#af9e78c1825c3281ce364bba79bb08cb2">toJSON</a> ()</td></tr>
+<tr class="memdesc:af9e78c1825c3281ce364bba79bb08cb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializes the component to JSON.  <br /></td></tr>
 <tr class="separator:af9e78c1825c3281ce364bba79bb08cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff9c89ef4f73325398d49097bf184df" id="r_a5ff9c89ef4f73325398d49097bf184df"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classComponentAnimatedTexture.html#a5ff9c89ef4f73325398d49097bf184df">GetName</a> ()</td></tr>
+<tr class="memdesc:a5ff9c89ef4f73325398d49097bf184df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name/type of the component.  <br /></td></tr>
 <tr class="separator:a5ff9c89ef4f73325398d49097bf184df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -148,7 +157,9 @@ long&#160;</td><td class="memItemRight" valign="bottom"><b>mCurrentFramePlaying<
 long&#160;</td><td class="memItemRight" valign="bottom"><b>mLastFrameInSequence</b></td></tr>
 <tr class="separator:add3318ea22c1973e6716c97284f85c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A component for managing sprite animations using a texture atlas and metadata. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5ff9c89ef4f73325398d49097bf184df" name="a5ff9c89ef4f73325398d49097bf184df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ff9c89ef4f73325398d49097bf184df">&#9670;&#160;</a></span>GetName()</h2>
 
@@ -172,7 +183,9 @@ long&#160;</td><td class="memItemRight" valign="bottom"><b>mLastFrameInSequence<
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Returns the name/type of the component. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#a676e9ba9618ffc6d42afed07ddedf3aa">IComponent</a>.</p>
 
 </div>
 </div>
@@ -200,7 +213,9 @@ long&#160;</td><td class="memItemRight" valign="bottom"><b>mLastFrameInSequence<
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Loads component data from a JSON object. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#aed75610139a5e82b1e8b80fda5d54207">IComponent</a>.</p>
 
 </div>
 </div>
@@ -256,7 +271,7 @@ long&#160;</td><td class="memItemRight" valign="bottom"><b>mLastFrameInSequence<
 </div><div class="memdoc">
 <p>Play an animation based on the name of the animation sequence specified in the data file. </p>
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Implements <a class="el" href="interfaceIComponent.html#ab5b5737d53e75a42dca835c87552e4d4">IComponent</a>.</p>
 
 </div>
 </div>
@@ -283,7 +298,9 @@ long&#160;</td><td class="memItemRight" valign="bottom"><b>mLastFrameInSequence<
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Serializes the component to JSON. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#af0d0ab3f7fe3e570052e2055b6a5c673">IComponent</a>.</p>
 
 </div>
 </div>
@@ -310,7 +327,9 @@ long&#160;</td><td class="memItemRight" valign="bottom"><b>mLastFrameInSequence<
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfaceIComponent.html">IComponent</a>.</p>
+<p>Updates the component every frame. </p>
+
+<p>Implements <a class="el" href="interfaceIComponent.html#a2172e40455944e07650d7307aedad28d">IComponent</a>.</p>
 
 </div>
 </div>

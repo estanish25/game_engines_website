@@ -1,5 +1,10 @@
 \doxysection{Component\+Texture Class Reference}
 \hypertarget{classComponentTexture}{}\label{classComponentTexture}\index{ComponentTexture@{ComponentTexture}}
+
+
+A texture-\/rendering component that supports scaling, rotation, and optional text rendering.  
+
+
 Inheritance diagram for Component\+Texture\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -14,29 +19,29 @@ Inheritance diagram for Component\+Texture\+:\begin{figure}[H]
 \item 
 \Hypertarget{classComponentTexture_adc44e85b63bc40976f4fc88105838597}\label{classComponentTexture_adc44e85b63bc40976f4fc88105838597} 
 bool {\bfseries Set\+Texture} (string filename, SDL\+\_\+\+Rect src\+Rect=SDL\+\_\+\+Rect(0, 0, 0, 0))
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the texture from a file and optional source rectangle. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentTexture_a36d4c517c09c1431f386562111059d35}\label{classComponentTexture_a36d4c517c09c1431f386562111059d35} 
 void {\bfseries Set\+Dest} (Vec2f pos, Vec2f scale, double angle)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the destination position, scale, and angle. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentTexture_aeae7531d4db8580786870e1a47a097b1}\label{classComponentTexture_aeae7531d4db8580786870e1a47a097b1} 
 void {\bfseries Set\+Text} (string text, TTF\+\_\+\+Font \texorpdfstring{$\ast$}{*}font, SDL\+\_\+\+Color color)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the texture from rendered text. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentTexture_a0047238bdd9289d3a0068acb638e8852}\label{classComponentTexture_a0047238bdd9289d3a0068acb638e8852} 
 void {\bfseries Set\+Rotation} (double angle)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the rotation angle in degrees. \end{DoxyCompactList}\item 
 \Hypertarget{classComponentTexture_abeab1f16073b262bf753950068f4a5f5}\label{classComponentTexture_abeab1f16073b262bf753950068f4a5f5} 
 void {\bfseries turn} (double angle)
-\item 
+\begin{DoxyCompactList}\small\item\em Rotates the texture by a given angle. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{classComponentTexture_afa6df3eecf04335a887baba734a1214b}{Update}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Updates the component every frame. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{classComponentTexture_a5e00255303b878ef5774e43437633cd4}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}r)
-\item 
+\begin{DoxyCompactList}\small\item\em Renders the component to the screen. \end{DoxyCompactList}\item 
 override void \mbox{\hyperlink{classComponentTexture_aedd4888047f7a95b65fdc0cc8a4b6d73}{load\+From\+JSON}} (JSONValue j)
-\item 
+\begin{DoxyCompactList}\small\item\em Loads component data from a JSON object. \end{DoxyCompactList}\item 
 override JSONValue \mbox{\hyperlink{classComponentTexture_ae230385b2c0520198c5c2300da4ebde8}{to\+JSON}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Serializes the component to JSON. \end{DoxyCompactList}\item 
 override string \mbox{\hyperlink{classComponentTexture_a1042276d2117ef48816285ee05d32c9f}{Get\+Name}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the name/type of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -66,6 +71,9 @@ SDL\+\_\+\+Rect {\bfseries m\+Src\+Rect}
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+A texture-\/rendering component that supports scaling, rotation, and optional text rendering. 
+
 \doxysubsection{Member Function Documentation}
 \Hypertarget{classComponentTexture_a1042276d2117ef48816285ee05d32c9f}\label{classComponentTexture_a1042276d2117ef48816285ee05d32c9f} 
 \index{ComponentTexture@{ComponentTexture}!GetName@{GetName}}
@@ -75,7 +83,11 @@ SDL\+\_\+\+Rect {\bfseries m\+Src\+Rect}
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Returns the name/type of the component. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_a676e9ba9618ffc6d42afed07ddedf3aa}{IComponent}}.
 
 \Hypertarget{classComponentTexture_aedd4888047f7a95b65fdc0cc8a4b6d73}\label{classComponentTexture_aedd4888047f7a95b65fdc0cc8a4b6d73} 
 \index{ComponentTexture@{ComponentTexture}!loadFromJSON@{loadFromJSON}}
@@ -85,7 +97,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Loads component data from a JSON object. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_aed75610139a5e82b1e8b80fda5d54207}{IComponent}}.
 
 \Hypertarget{classComponentTexture_a5e00255303b878ef5774e43437633cd4}\label{classComponentTexture_a5e00255303b878ef5774e43437633cd4} 
 \index{ComponentTexture@{ComponentTexture}!Render@{Render}}
@@ -95,7 +111,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Renders the component to the screen. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_ab5b5737d53e75a42dca835c87552e4d4}{IComponent}}.
 
 \Hypertarget{classComponentTexture_ae230385b2c0520198c5c2300da4ebde8}\label{classComponentTexture_ae230385b2c0520198c5c2300da4ebde8} 
 \index{ComponentTexture@{ComponentTexture}!toJSON@{toJSON}}
@@ -105,7 +125,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Serializes the component to JSON. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_af0d0ab3f7fe3e570052e2055b6a5c673}{IComponent}}.
 
 \Hypertarget{classComponentTexture_afa6df3eecf04335a887baba734a1214b}\label{classComponentTexture_afa6df3eecf04335a887baba734a1214b} 
 \index{ComponentTexture@{ComponentTexture}!Update@{Update}}
@@ -115,7 +139,11 @@ Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
 
 
 
-Implements \mbox{\hyperlink{interfaceIComponent}{IComponent}}.
+Updates the component every frame. 
+
+
+
+Implements \mbox{\hyperlink{interfaceIComponent_a2172e40455944e07650d7307aedad28d}{IComponent}}.
 
 
 

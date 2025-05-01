@@ -76,6 +76,9 @@ $(function() {
   <div class="headertitle"><div class="title">SceneScript Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Script that runs logic for the scene, including player-enemy collision and transitions.  
+ <a href="classSceneScript.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for SceneScript:</div>
 <div class="dyncontent">
@@ -90,10 +93,12 @@ Inheritance diagram for SceneScript:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aadc432752221e2a226849356fd2466d7" id="r_aadc432752221e2a226849356fd2466d7"><td class="memItemLeft" align="right" valign="top"><a id="aadc432752221e2a226849356fd2466d7" name="aadc432752221e2a226849356fd2466d7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>this</b> (<a class="el" href="structScene.html">Scene</a> *scene)</td></tr>
+<tr class="memdesc:aadc432752221e2a226849356fd2466d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classSceneScript.html" title="Script that runs logic for the scene, including player-enemy collision and transitions.">SceneScript</a> associated with a given scene. <br /></td></tr>
 <tr class="separator:aadc432752221e2a226849356fd2466d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d17949ea547ba8b1c8a25537920b48" id="r_a14d17949ea547ba8b1c8a25537920b48"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneScript.html#a14d17949ea547ba8b1c8a25537920b48">Update</a> ()</td></tr>
 <tr class="separator:a14d17949ea547ba8b1c8a25537920b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6d011dfcc9ea4b965ed1291e75d31d3" id="r_ab6d011dfcc9ea4b965ed1291e75d31d3"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSceneScript.html#ab6d011dfcc9ea4b965ed1291e75d31d3">GetName</a> ()</td></tr>
+<tr class="memdesc:ab6d011dfcc9ea4b965ed1291e75d31d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this script.  <br /></td></tr>
 <tr class="separator:ab6d011dfcc9ea4b965ed1291e75d31d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -105,7 +110,9 @@ Public Attributes</h2></td></tr>
 uint&#160;</td><td class="memItemRight" valign="bottom"><b>mStartTime</b></td></tr>
 <tr class="separator:a05a83a829fa2da563db8f2cf5a0b2db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Script that runs logic for the scene, including player-enemy collision and transitions. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ab6d011dfcc9ea4b965ed1291e75d31d3" name="ab6d011dfcc9ea4b965ed1291e75d31d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6d011dfcc9ea4b965ed1291e75d31d3">&#9670;&#160;</a></span>GetName()</h2>
 
@@ -128,6 +135,8 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>mStartTime</b></td></
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns the name of this script. </p>
 
 <p>Implements <a class="el" href="interfaceIScript.html">IScript</a>.</p>
 
@@ -155,6 +164,7 @@ uint&#160;</td><td class="memItemRight" valign="bottom"><b>mStartTime</b></td></
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Updates the script logic every frame. Checks for collisions between the player and enemies after a delay, and triggers a death animation and scene transition. </p>
 
 <p>Implements <a class="el" href="interfaceIScript.html">IScript</a>.</p>
 

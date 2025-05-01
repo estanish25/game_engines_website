@@ -90,10 +90,12 @@ Inheritance diagram for PlayerScript:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8680f9f80f61ef53bfca0d1deb639e45" id="r_a8680f9f80f61ef53bfca0d1deb639e45"><td class="memItemLeft" align="right" valign="top"><a id="a8680f9f80f61ef53bfca0d1deb639e45" name="a8680f9f80f61ef53bfca0d1deb639e45"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>this</b> (size_t owner)</td></tr>
+<tr class="memdesc:a8680f9f80f61ef53bfca0d1deb639e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classPlayerScript.html">PlayerScript</a> tied to a <a class="el" href="classGameObject.html">GameObject</a> by ID. <br /></td></tr>
 <tr class="separator:a8680f9f80f61ef53bfca0d1deb639e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca9317531a1a790a037dddde20841aeb" id="r_aca9317531a1a790a037dddde20841aeb"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerScript.html#aca9317531a1a790a037dddde20841aeb">Update</a> ()</td></tr>
 <tr class="separator:aca9317531a1a790a037dddde20841aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe0ab7e35c70fecaa0d51a8c5f5ee94" id="r_abbe0ab7e35c70fecaa0d51a8c5f5ee94"><td class="memItemLeft" align="right" valign="top">override string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlayerScript.html#abbe0ab7e35c70fecaa0d51a8c5f5ee94">GetName</a> ()</td></tr>
+<tr class="memdesc:abbe0ab7e35c70fecaa0d51a8c5f5ee94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of this script.  <br /></td></tr>
 <tr class="separator:abbe0ab7e35c70fecaa0d51a8c5f5ee94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -102,7 +104,9 @@ Public Attributes</h2></td></tr>
 Vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>mVel</b></td></tr>
 <tr class="separator:a24bf666c6973ec945148d964dfc91816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Script that controls the main player's movement and animation based on keyboard input. Handles collision with world boundaries and updates transform and animation state. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abbe0ab7e35c70fecaa0d51a8c5f5ee94" name="abbe0ab7e35c70fecaa0d51a8c5f5ee94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abbe0ab7e35c70fecaa0d51a8c5f5ee94">&#9670;&#160;</a></span>GetName()</h2>
 
@@ -125,6 +129,8 @@ Vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>mVel</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Returns the name of this script. </p>
 
 <p>Implements <a class="el" href="interfaceIScript.html">IScript</a>.</p>
 
@@ -152,6 +158,8 @@ Vec2f&#160;</td><td class="memItemRight" valign="bottom"><b>mVel</b></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Updates the player's movement based on keyboard input. <br  />
+ Applies animation changes and restricts movement to within map bounds. </p>
 
 <p>Implements <a class="el" href="interfaceIScript.html">IScript</a>.</p>
 
